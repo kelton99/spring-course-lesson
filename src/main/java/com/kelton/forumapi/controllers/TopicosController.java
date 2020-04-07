@@ -1,7 +1,6 @@
 package com.kelton.forumapi.controllers;
 
 import java.net.URI;
-import java.util.List;
 
 import javax.transaction.Transactional;
 import javax.validation.Valid;

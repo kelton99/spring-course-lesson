@@ -21,21 +21,27 @@ public class TopicoForm {
 	public String getTitulo() {
 		return titulo;
 	}
+	
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
+	
 	public String getMensagem() {
 		return mensagem;
 	}
+	
 	public void setMensagem(String mensagem) {
 		this.mensagem = mensagem;
 	}
+	
 	public Long getIdCurso() {
 		return idCurso;
 	}
+	
 	public void setIdCurso(Long idCurso) {
 		this.idCurso = idCurso;
 	}
+	
 	public Topico converter(CursoRepository cursoRepo) {
 		var curso = cursoRepo.findById(idCurso).get();
 		return new Topico(titulo, mensagem, curso);
